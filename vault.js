@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function() {
   var storage = {};
   return {
@@ -7,7 +8,7 @@ module.exports = function() {
       storage.value = value;
     },
     getValue : function(key) {
-      if(key === undefined) {
+      if (key === undefined) {
         return null;
       } else if (key === storage.key) {
         return storage.value;
